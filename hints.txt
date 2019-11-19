@@ -20,5 +20,7 @@ git branch -> för att se vilka branches som finns och vilken du är på
 git pull -> ta ner senaste master
 git add -> för att lägga till filer till ny commit
 git commit -m "Description of whats to be commited"
+git commit -am "Description.."  -> To add and commit at the same time 
+
 git push -> för att pusha till den branch du står i
 
