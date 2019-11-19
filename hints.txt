@@ -1,0 +1,24 @@
+npm install 
+(node_modules)
+
+npm run devstart  -> kör på port 3000
+
+
+handlebars = vyer
+
+ny branch -> ny egen branch
+
+
+git status -> för att få input om status
+
+getboostrap.com/doc/3.3/css/?#
+
+git init -> ställ dig i den mapp som ska bli ditt nya Git repo och skriv git init
+
+git checkout -b registerview -> byt till branch registerview (-b skapa branch om den inte finns redan)
+git branch -> för att se vilka branches som finns och vilken du är på
+git pull -> ta ner senaste master
+git add -> för att lägga till filer till ny commit
+git commit -m "Description of whats to be commited"
+git push -> för att pusha till den branch du står i
+

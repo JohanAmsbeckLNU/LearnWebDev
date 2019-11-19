@@ -88,10 +88,6 @@ if('radius' in circle) console.log('yes');
 
 
 
-
-
-
-
 // Break => make us jump out of a loop
 // Continue => Jumps out of current loop iteration and start next
 
