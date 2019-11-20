@@ -31,14 +31,9 @@ git -rm file.txt -> removes the file from local directory and deleted added to s
 git commit -m "now removing file in stageing area" -> to actually remove the file from repository
 Alt. if rm file.txt has been used localy. The git add -u is used to add the deleted file to stage. Then commit to move it to repo.
 
-
 //Move file in git
 git mv file.txt newlocation/ -> now it staged to be moved (renamed to new path). Then commit o push to repo.
 If you are to move a file outside of git location then use git add -u (same as delete) to statege
-
-
-
-
 
 git commit -m "Description of whats to be commited"
 git commit -am "Description.."  -> To add and commit at the same time 
@@ -48,3 +43,5 @@ git log --oneline --graph --decorate --color
 
 git push -> för att pusha till den branch du står i
 
+//To igoner files create/modify .gitignore
+* to have git igonre all log files add line *.log in file or the path to files to ignore
