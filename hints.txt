@@ -60,3 +60,5 @@ git push -> för att pusha till den branch du står i
 
 //To igoner files create/modify .gitignore
 * to have git igonre all log files add line *.log in file or the path to files to ignore
+
+// If you locally are ahead of the remote repo do git pull origin master and then do git push origin master
