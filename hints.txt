@@ -8,10 +8,20 @@ handlebars = vyer
 
 ny branch -> ny egen branch
 
+getboostrap.com/doc/3.3/css/?#
+
+
+//git ssh setup
+* create .ssh in home folder (mkdir .ssh)
+* Generate ssh keys in .ssh folder ssh-keygen -t rsa -C "mail@address.com" (use passfrase)
+* -> this generate a public + a private key
+* Log into github and paste public key to SSH key on page and press add
+* ssh -T git@github.com -> it's going to ask if you are sure you like to establis a connection (yes)
+
+
+
 
 git status -> för att få input om status
-
-getboostrap.com/doc/3.3/css/?#
 
 git init -> ställ dig i den mapp som ska bli ditt nya Git repo och skriv git init
 
@@ -37,6 +47,11 @@ If you are to move a file outside of git location then use git add -u (same as d
 
 git commit -m "Description of whats to be commited"
 git commit -am "Description.."  -> To add and commit at the same time 
+
+//to send a local git repo to a remote repo (like github)
+git remote add origin git@github.com:JohanAmsbeckLNU/LearnWebDev.git
+git push -u origin master
+
 
 git log  -> to see all earlier commits (history)
 git log --oneline --graph --decorate --color
