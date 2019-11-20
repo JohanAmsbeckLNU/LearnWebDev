@@ -18,9 +18,33 @@ git init -> ställ dig i den mapp som ska bli ditt nya Git repo och skriv git in
 git checkout -b registerview -> byt till branch registerview (-b skapa branch om den inte finns redan)
 git branch -> för att se vilka branches som finns och vilken du är på
 git pull -> ta ner senaste master
+
 git add -> för att lägga till filer till ny commit
+git add .  -> will add all modified or new files to stageing area
+
+//remove a file that has been added to statege (and backout to previous version)
+git reset HEAD file.txt -> to remove file from stage (after add)
+git checkout -- file.txt  -> to get back to the previous commit file.txt version
+
+//remove a file that is commmited
+git -rm file.txt -> removes the file from local directory and deleted added to statge
+git commit -m "now removing file in stageing area" -> to actually remove the file from repository
+Alt. if rm file.txt has been used localy. The git add -u is used to add the deleted file to stage. Then commit to move it to repo.
+
+
+//Move file in git
+git mv file.txt newlocation/ -> now it staged to be moved (renamed to new path). Then commit o push to repo.
+If you are to move a file outside of git location then use git add -u (same as delete) to statege
+
+
+
+
+
 git commit -m "Description of whats to be commited"
 git commit -am "Description.."  -> To add and commit at the same time 
+
+git log  -> to see all earlier commits (history)
+git log --oneline --graph --decorate --color
 
 git push -> för att pusha till den branch du står i
 
