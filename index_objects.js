@@ -63,10 +63,40 @@ console.log(circle1);
 // new Number(); // 1,2,3,...
 
 //Functions are Objects
-const Circle4 = new Function('radius',}][{¥€$£@¡¶!"#¤%&/()=?ÄÄåæø>||'"}]
+const Circle4 = new Function('radius',`
     this.radius = radius;
     this.draw = function(){
         console.log('draw');
+    }
+`);
+
+//Cloning an object (the old way)
+const another = {};
+
+for(let key in circle){
+  another[key] = circle[key];
 }
-´);
+console.log(another);
+
+//Cloning an object (the better way)
+const another2 = Object.assign({}, circle);
+console.log(another2);
+
+//Cloning an object (the better way + additional vars)
+const another3 = Object.assign({
+  color: 'yellow'
+}, circle);
+console.log(another3);
+
+//Cloning an object with bread operator ... which takes all variables and methods of an object
+const another4 = { ...circle};
+console.log(another4);
+
+
+// Math object
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
+console.log(Math.random());
+console.log(Math.round(1.9));
+console.log(Math.max(1, 2, 3, 4, 5));
+console.log(Math.min(1, 2, 3, 4, 5));
 
