@@ -108,3 +108,5 @@ console.log(typeof message);
 // String object
 const anotherString = new String('hi');
 console.log(typeof anotherString);
+
+//test
